@@ -4,7 +4,7 @@ cd ~
 #Install core packages as root
 echo 'Installing essential packages...'
 su root
-apt update
+apt update && apt upgrade -y
 apt install sudo gnome-core gnome-shell-extension-manager gnome-software-plugin-flatpak firefox-esr flatpak micro kitty gdm3 git make node-typescript
 
 #Add user to Sudo group
