@@ -12,6 +12,7 @@ echo 'Adding user to Sudo group...'
 read -r -p "What is the username?" userName
 export userName
 sudo adduser $userName sudo
+su $userName
 
 #Compile Pop Shell
 echo 'Compiling Pop-Shell...'
